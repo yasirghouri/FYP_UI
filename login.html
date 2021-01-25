@@ -20,7 +20,9 @@
             <div class="container">
                 <nav class="navbar navbar-expand-lg navbar-light">
                     <a class="navbar-brand" href="index.html"><img src="./images/obr-logo.png" alt="logo"></a>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -44,10 +46,10 @@
                         <div class="cart my-2 my-lg-0">
                             <span>
                                 <i class="fa fa-shopping-cart" aria-hidden="true"></i></span>
-                            <span class="quntity">3</span>
                         </div>
                         <form class="form-inline my-2 my-lg-0">
-                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..." aria-label="Search">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search here..."
+                                aria-label="Search">
                             <span class="fa fa-search"></span>
                         </form>
                     </div>
@@ -61,27 +63,104 @@
             <span class="breadcrumb-item active">Login</span>
         </div>
     </div>
-    <section class="static about-sec">
+    <section class="static login-sec about-sec">
         <div class="container">
-            <h1>My Account / Login</h1>
-            <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's printer took a galley of type and scrambled it to make a type specimen book. It has survived not only fiveLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem </p>
-            <div class="form">
-                <form>
-                    <div class="row">
-                        <div class="col-md-5">
-                            <input placeholder="Enter User Name" required>
-                            <span class="required-star">*</span>
+            <div class="row login-row">
+                <div class="col-lg-6">
+                    <!--image slider start-->
+                    <div class="login-login-slider">
+                        <div class="login-login-slides">
+                          <!--radio buttons start-->
+                          <input type="radio" name="radio-btn" id="radio1" />
+                          <input type="radio" name="radio-btn" id="radio2" />
+                          <input type="radio" name="radio-btn" id="radio3" />
+                          <input type="radio" name="radio-btn" id="radio4" />
+                          <!--radio buttons end-->
+                          <!--login-slide images start-->
+                          <div class="login-slide first">
+                            <img src="./images/slide1.jpg" alt="" />
+                          </div>
+                          <div class="login-slide">
+                            <img src="./images/slide2.jpg" alt="" />
+                          </div>
+                          <div class="login-slide">
+                            <img src="./images/slide3.jpg" alt="" />
+                          </div>
+                          <div class="login-slide">
+                            <img src="./images/slide4.jpg" alt="" />
+                          </div>
+                          <!--login-slide images end-->
+                          <!--automatic navigation start-->
+                          <div class="navigation-auto">
+                            <div class="auto-btn1"></div>
+                            <div class="auto-btn2"></div>
+                            <div class="auto-btn3"></div>
+                            <div class="auto-btn4"></div>
+                          </div>
+                          <!--automatic navigation end-->
                         </div>
-                        <div class="col-md-5">
-                            <input type="email" placeholder="Enter Email Address" required>
-                            <span class="required-star">*</span>
+                        <!--manual navigation start-->
+                        <div class="navigation-manual">
+                          <label for="radio1" class="manual-btn"></label>
+                          <label for="radio2" class="manual-btn"></label>
+                          <label for="radio3" class="manual-btn"></label>
+                          <label for="radio4" class="manual-btn"></label>
                         </div>
-                        <div class="col-lg-8 col-md-12">
-                            <button class="btn black">Login</button>
-                            <h5>not Registered? <a href="register.html">REgister here</a></h5>
+                        <!--manual navigation end-->
+                      </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <div class="wrapper login-wrapper">
+                        <div class="title-text">
+                            <div class="title login">Seller Login</div>
+                            <div class="title signup">Buyer Login</div>
+                        </div>
+                        <div class="form-container">
+                            <div class="slide-controls">
+                                <input type="radio" name="slide" id="login" checked />
+                                <input type="radio" name="slide" id="signup" />
+                                <label for="login" class="slide login">Seller</label>
+                                <label for="signup" class="slide signup">Buyer</label>
+                                <div class="slider-tab"></div>
+                            </div>
+                            <div class="form-inner">
+                                <form action="#" class="login">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email Address" required />
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" required />
+                                    </div>
+                                    <div class="pass-link"></div>
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="Login" />
+                                    </div>
+                                    <div class="signup-link">
+                                        Not a member? <a href="">Signup now</a>
+                                    </div>
+                                </form>
+                                <form action="#" class="signup">
+                                    <div class="field">
+                                        <input type="email" placeholder="Email Address" required />
+                                    </div>
+                                    <div class="field">
+                                        <input type="password" placeholder="Password" required />
+                                    </div>
+                                    <div class="pass-link"></div>
+                                    <div class="field btn">
+                                        <div class="btn-layer"></div>
+                                        <input type="submit" value="Login" />
+                                    </div>
+                                    <div class="signup-link">
+                                        Not a member? <a href="">Signup now</a>
+                                    </div>
+                                </form>
+                            </div>
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
         </div>
     </section>
@@ -91,8 +170,9 @@
                 <div class="col-md-6">
                     <div class="address">
                         <h4>Our Address</h4>
-                        <h6>Stop Main، Lal Kothi (house), 22-E، Block-6 Block 6 PECHS, Karachi, Karachi City, Sindh 75400</h6>
-                        
+                        <h6>Stop Main، Lal Kothi (house), 22-E، Block-6 Block 6 PECHS, Karachi, Karachi City, Sindh
+                            75400</h6>
+
                     </div>
                     <div class="timing">
                         <h4>Features</h4>
@@ -117,7 +197,7 @@
                         <h6>Email : farischeck009@gmail.com</h6>
                     </div>
                 </div>
-                
+
             </div>
         </div>
         <div class="copy-right">
@@ -142,6 +222,33 @@
     <script src="js/bootstrap.min.js"></script>
     <script type="text/javascript" src="js/owl.carousel.min.js"></script>
     <script src="js/custom.js"></script>
+    <script>
+        const loginText = document.querySelector('.title-text .login');
+        const loginForm = document.querySelector('form.login');
+        const loginBtn = document.querySelector('label.login');
+        const signupBtn = document.querySelector('label.signup');
+        const signupLink = document.querySelector('form .signup-link a');
+        signupBtn.onclick = () => {
+            loginForm.style.marginLeft = '-50%';
+            loginText.style.marginLeft = '-50%';
+        };
+        loginBtn.onclick = () => {
+            loginForm.style.marginLeft = '0%';
+            loginText.style.marginLeft = '0%';
+        };
+        signupLink.onclick = () => {
+            signupBtn.click();
+            return false;
+        };
+        var counter = 1;
+        setInterval(function () {
+            document.getElementById('radio' + counter).checked = true;
+            counter++;
+            if (counter > 4) {
+                counter = 1;
+            }
+        }, 2500);
+    </script>
 </body>
 
 </html>
